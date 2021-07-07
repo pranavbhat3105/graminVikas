@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="resources/css/survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+ 
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Gramin Vikas Survey Form!</h1>
+      <p id="description" class="description text-center">
+        Please Fill The Survey Form,
+        <br> You Are Just One Step Away!
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name of the Applicant :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name here"
+          required
+        />
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            ><br>Date Of Birth<span class="clue"></span></label
+          >
+          <input
+            type="date"
+            name="age"
+            id="number"
+            min="1"
+            max="2012"
+            class="form-control"
+            placeholder="D.O.B"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue"></span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Gender</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Male"
+              type="radio"
+              class="input-radio"
+              checked
+            />Male</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="Female"
+              type="radio"
+              class="input-radio"
+            />Female</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="Other"
+              type="radio"
+              class="input-radio"
+            />Other</label
+          >
+        </div>
+  
+      
+      <div class="form-group">
+        <label id="aadhar-label" for="name">Aadhar Number *</label>
+        <input
+          type="aadhar"
+          id="aadhar"
+          class="form-control"
+          placeholder="Enter Your Aadhar Number"
+         
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="contact-label" for="name">Contact Number</label>
+        <input
+          type="number"
+          name="contact"
+          id="contact"
+          class="form-control"
+          placeholder="Enter Your Contact Number"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email here"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <p>Maritial Status</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Male"
+            type="radio"
+            class="input-radio"
+            checked
+          />Single</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="Female"
+            type="radio"
+            class="input-radio"
+          />Married</label
+        >
+          
+        <label>
+          <input
+            name="user-recommend"
+            value="Female"
+            type="radio"
+            class="input-radio"
+          />Divorced</label
+        >
+
+        <label
+          ><input
+            name="user-recommend"
+            value="Other"
+            type="radio"
+            class="input-radio"
+          />Widowed</label
+        >
+      </div>
+
+      <div class="form-group">
+        <label id="name-label" for="name">Father's Name / Husband's Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your Father's or Husband's Name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="name-label" for="name">Mother's Name / Wife's Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your Mother's or Wife's"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="address-label" for="name">Permanent Address</label>
+        <input
+          type="text"
+          name="name"
+          id="address"
+          class="form-control"
+          placeholder="Enter your Address"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="tempAdd-label" for="name">Temporary Address (optional) </label>
+        <input
+          type="text"
+          name="name"
+          id="tempAdd"
+          class="form-control"
+          placeholder="(Write No if not)"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="Inc-label" for="name">Annual Income Of Family</label>
+        <input
+          type="number"
+          name="name"
+          id="Inc"
+          class="form-control"
+          placeholder="Eg.  Rs 2,00,00/-"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="lang-label" for="name">Languages Spoken</label>
+        <input
+          type="text"
+          name="name"
+          id="lang"
+          class="form-control"
+          placeholder=""
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="Educ-label" for="name">Education Qualification</label>
+        <input
+          type="text"
+          name="name"
+          id="Educ"
+          class="form-control"
+          placeholder=""
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="hobby-label" for="name">Hobbies</label>
+        <input
+          type="text"
+          name="name"
+          id="hobby"
+          class="form-control"
+          placeholder=""
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="int-label" for="name">Interest</label>
+        <input
+          type="text"
+          name="name"
+          id="int"
+          class="form-control"
+          placeholder="Anything You are interested in"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="skill-label" for="name">Skills</label>
+        <input
+          type="text"
+          name="name"
+          id="skill"
+          class="form-control"
+          placeholder="Things You're Good At"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="acti-label" for="name">Extra Activities (If Any)</label>
+        <input
+          type="text"
+          name="name"
+          id="acti"
+          class="form-control"
+          placeholder=""
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="pref-label" for="name">Preffered Region Of Work</label>
+        <input
+          type="text"
+          name="name"
+          id="pref"
+          class="form-control"
+          placeholder="Eg. If Someone Lives in Mumbai, so write Mumbai"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <p><br>Transportation Facilities Available?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="No"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+      </div>
+
+      <div class="form-group">
+        <label id="exp-label" for="name">Experience in Interested Field</label>
+        <input
+          type="text"
+          name="name"
+          id="exp"
+          class="form-control"
+          placeholder="Eg. Past Work Experience If Any"
+          required
+        />
+      </div>
+
+
+      <div class="form-group">
+        <p><br>Presently Working?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="No"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >   
+      </div>
+    
+
+      <div class="form-group">
+        <p>Anything Other than the form, Please Share With Us!</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Write here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

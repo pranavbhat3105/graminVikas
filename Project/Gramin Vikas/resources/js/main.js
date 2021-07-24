@@ -62,8 +62,3 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   e.target.elements.message.value = '';
 });
 
-
-
-var loginclick = document.getElementById(loginClick).onclick = function () {
-  location.href = "www.facebook.com";
-};

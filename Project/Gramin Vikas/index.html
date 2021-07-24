@@ -2,72 +2,87 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS only -->
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="resources/css/newStyle.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styless.css">
+        
+           <!-- ION-ICONS only -->
+           <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 
+           <!-- FONTS only -->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <!-- CSS only -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
         <title>Gramin Vikas</title>   
+    
     </head>
     <body>
-        <header>
-            
-           
-<div class="navigation">
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo" style="cursor: pointer;" id="logoClick">Gramin Vikas</label>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="aboutUs.html">About</a></li>
-          <li><a href="ourServices.html">Services</a></li>
-          <li><a href="contactUs.html">Contact</a></li>
-          <li><a href="#signup">Feedback</a></li>
-          <li><a href="login.html"class="active"  id="signIn">Log In</a></li>
-        </ul>
-      </nav>
-</div>
+
+
+    <header>
+
+        <!-- =====NAVIGATION===== -->
+         <div class="navigation">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <a  href="#"class="logo" style="cursor: pointer;" id="logoClick">Gramin Vikas</a>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="ourServices.html">Services</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="surveyform.html">Apply</a></li>
+                <li><a href="login.html"class="active"  id="signIn">Log In</a></li>
+                </ul>
+             </nav>
+        </div>
+
+
+
+        <!-- =====MAIN HOME PAGE==== -->
 
          <section id="main-hero">
-            <div class="hero-text-box">
-                <h1 style="padding-top: 50px;">Goodbye Unemployment!<br>Find A Job As Per Your Need!</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="login.html">Apply For A Job </a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#" style="margin-top: 80px;">Hire People</a>
-                <div class="s01">
-                    <form>
-                        <div class="inner-form">
-                          <div class="input-field first-wrap">
-                            <input id="search" type="text" placeholder="What are you looking for?" />
+                <div class="hero-text-box">
+                    <h1 style="padding-top: 50px;">Goodbye Unemployment!<br>Find A Job As Per Your Need!</h1>
+                    <a class="btn btn-full js--scroll-to-plans" href="surveyform.html">Apply For A Job </a>
+                    <a class="btn btn-ghost js--scroll-to-start" href="surveyform.html" style="margin-top: 80px;">Hire People</a>
+                    <div class="s01">
+                        <form>
+                          <div class="inner-form">
+                             <div class="input-field first-wrap">
+                                <input id="search" type="text" placeholder="What are you looking for?" />
+                             </div>
+                            <div class="input-field second-wrap">
+                                <input id="location" type="text" placeholder="location" />
+                            </div>
+                            <div class="input-field third-wrap">
+                                <button class="btn-search" type="button">Search</button>
+                            </div>
                           </div>
-                          <div class="input-field second-wrap">
-                            <input id="location" type="text" placeholder="location" />
-                          </div>
-                          <div class="input-field third-wrap">
-                            <button class="btn-search" type="button">Search</button>
-                          </div>
-                        </div>
-                      </form>
-        </div>
-            </div>
+                         </form>
+                    </div>
+                </div>
          </section>
 
           
            
-        </header>
+    </header>
         
+
+    <!-- ======FEATURES SECTION=========== -->
+
+
         <section class="section-features js--section-features" id="features">
             <div class="row" >
                 <h2> For Our Better Future &mdash; Make Work An Adventure</h2>
@@ -95,7 +110,7 @@
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <i class="ion-ios-checkmark-outline icon-big"></i>
                     <h3>100% Satisfied</h3>
                     <p>
                         We Will Help You Match With The Job You Want! 100% Satisfaction To Our Members Is Our Top Priority. We really mean that.
@@ -110,56 +125,111 @@
                 </div>
             </div>
             
+
+
+
+
+            <!-- ===== OUR PARTNERS SECTION ===== -->
+
+
              <h2 class="recrutier">--- OUR PARTNERS ---</h2>
         </section>
         
         <section class="section-meals">
-            <ul class="meals-showcase clearfix">
-                <li>
+
+
+            <div class="outer-grid">
+                <div class="inner-grid">
+                        <figure class="meal-photo">
+                            <img src="resources/img/ourMembers/logo1.png" alt="logo1">
+                        </figure>
+                    
+                    
+                        <figure class="meal-photo">
+                            <img src="resources/img/ourMembers/logo2.png" alt="logo2">
+                        </figure>
+                    
+                    
+                        <figure class="meal-photo">
+                            <img src="resources/img/ourMembers/logo5.png" alt="logo5">
+                        </figure>
+            
+                        <figure class="meal-photo">
+                            <img src="resources/img/ourMembers/logo6.png" alt="logo6">
+                        </figure>
+    
+                </div>
+
+
+                <div class="inner-grid">
                     <figure class="meal-photo">
-                        <img src="resources/img/logo1.png" alt="Korean bibimbap with egg and vegetables">
+                        <img src="resources/img/ourMembers/logo7.png" alt="logo7">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/logo2.png" alt="Simple italian pizza with cherry tomatoes">
+                        <img src="resources/img/ourMembers/logo8.png" alt="logo8">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/logo5.png" alt="Chicken breast steak with vegetables">
+                        <img src="resources/img/ourMembers/logo9.png" alt="logo9">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/logo6.png" alt="Autumn pumpkin soup">
+                        <img src="resources/img/ourMembers/logo10.png" alt="logo10">
                     </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
+                </div>
+
+
+
+                <div class="inner-grid">
+                    
                     <figure class="meal-photo">
-                        <img src="resources/img/logo7.png" alt="Paleo beef steak with vegetables">
+                        <img src="resources/img/ourMembers/amazon.png" alt="amazon">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/logo8.png" alt="Healthy baguette with egg and vegetables">
+                        <img src="resources/img/ourMembers/fedEx.png" alt="fedEx">
                     </figure>
-                </li>
-                <li>
+                
+                
                     <figure class="meal-photo">
-                        <img src="resources/img/logo9.png" alt="Burger with cheddar and bacon">
+                        <img src="resources/img/ourMembers/flipkart.png" alt="flipkart">
                     </figure>
-                </li>
-                <li>
+        
                     <figure class="meal-photo">
-                        <img src="resources/img/logo10.png" alt="Granola with cherries and strawberries">
+                        <img src="resources/img/ourMembers/postman.png" alt="postman">
                     </figure>
-                </li>
-            </ul>
+                </div>
+
+                <div class="inner-grid">
+                    <figure class="meal-photo">
+                        <img src="resources/img/ourMembers/athena.png" alt="athena">
+                    </figure>
+                
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/ourMembers/groffers.png" alt="groffers">
+                    </figure>
+                
+                
+                    <figure class="meal-photo">
+                        <img src="resources/img/ourMembers/swiggy.png" alt="swiggy">
+                    </figure>
+        
+                    <figure class="meal-photo">
+                        <img src="resources/img/ourMembers/UC.png" alt="UC">
+                    </figure>
+                    </div>
+                </div>
+
         </section>
         
+
+        <!-- ======STEPS====== -->
         
         <section class="section-steps" id="works">
             <div class="row">
@@ -174,11 +244,15 @@
                     </div>
                     <div class="works-step clearfix">
                         <div>2</div>
-                        <p>Step 2: Choose whether to apply or to hire jobs based on your preferences.</p>
+                        <p>Step 2: Get verified by submitting documents.</p>
                     </div>
                     <div class="works-step clearfix">
                         <div>3</div>
-                        <p>Step 3: Now all oyu have to do is wait for your confirmation!</p>
+                        <p>Step 3:After being verified, Choose whether to apply or to hire jobs based on your preferences.</p>
+                    </div>
+                    <div class="works-step clearfix">
+                        <div>4</div>
+                        <p>Step 4: Now all you have to do is wait for your confirmation!</p>
                     </div>
                     
                     <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
@@ -187,6 +261,8 @@
             </div>
         </section>
         
+
+        <!-- ======REVIEWS===== -->
             
         <section class="section-testimonials">
             <div class="row">
@@ -196,19 +272,19 @@
                 <div class="col span-1-of-3">
                     <blockquote>
                       One of the best website is Gramin vikas as it allows us to hire people or apply for job just in few seconds.
-                        <cite><img src="resources/img/customer-1.jpg">Pranav Bhat</cite>
+                        <cite><img src="resources/img/customers/customer-1.jpg">Pranav Bhat</cite>
                     </blockquote>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
                        Inexpensive, fast and reliable. Since i have got a job from GraminVikas i have not been more happier.
-                        <cite><img src="resources/img/customer-2.jpg">Neetya H</cite>
+                        <cite><img src="resources/img/customers/customer-2.jpg">Neetya H</cite>
                     </blockquote>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
-I was looking for a job in Mumbai. I tried a lot of them and ended up with Gramin VIkas. Best job recruiter in the area. Keep up the great work!
-                    <cite><img src="resources/img/customer-3.jpg">Yash Rao</cite>
+                        I was looking for a job in Mumbai. I tried a lot of them and ended up with Gramin VIkas. Best job recruiter in the area. Keep up the great work!
+                    <cite><img src="resources/img/customers/customer-3.jpg">Yash Rao</cite>
                     </blockquote>
                 </div>
             </div>
@@ -218,68 +294,68 @@ I was looking for a job in Mumbai. I tried a lot of them and ended up with Grami
         
         
         <section class="section-form" id="signup">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
-            </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
+                <div class="row">
+                    <h2>We're happy to hear from you</h2>
+                </div>
+                <div class="row">
+                    <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="find-us">How did you find us?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="find-us" id="find-us">
+                                    <option value="friends" selected>Friends</option>
+                                    <option value="search">Search engine</option>
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Newsletter?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="news" id="news" checked> Yes, please
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked> Yes, please
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
+                        
+                    </form>
                     
-                </form>
-                
-            </div>    
+                </div>    
         </section>
         
 
@@ -305,7 +381,7 @@ I was looking for a job in Mumbai. I tried a lot of them and ended up with Grami
             </div>
             <div class="row">
                 <p>
-                    This webpage was created for the course "Mini Project" by 6 People. No copyrights here.<br>
+                    This webpage was created for internship purpose. No copyrights here.<br>
                     This webpage is for you! Thnakyou!
                 </p>
                 <p>
@@ -325,3 +401,55 @@ I was looking for a job in Mumbai. I tried a lot of them and ended up with Grami
     </body>  
     
 </html>
+
+
+
+
+
+ <!-- <div class="ourMemberList">
+                <ul class="meals-showcase clearfix">
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo1.png" alt="Korean bibimbap with egg and vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo2.png" alt="Simple italian pizza with cherry tomatoes">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo5.png" alt="Chicken breast steak with vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo6.png" alt="Autumn pumpkin soup">
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="meals-showcase clearfix">
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo7.png" alt="Paleo beef steak with vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo8.png" alt="Healthy baguette with egg and vegetables">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo9.png" alt="Burger with cheddar and bacon">
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="meal-photo">
+                            <img src="resources/img/logo10.png" alt="Granola with cherries and strawberries">
+                        </figure>
+                    </li>
+                </ul>
+
+            </div> -->

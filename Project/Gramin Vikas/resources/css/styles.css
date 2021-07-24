@@ -113,6 +113,7 @@ button:hover {
 }
 
 /*--/wrapper--*/
+
 .wrapper {
   width: 100%;
   padding-right: 15px;
@@ -120,6 +121,9 @@ button:hover {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+ /* =====Media Queries==== */  
 
 @media (min-width: 576px) {
   .wrapper {
@@ -153,7 +157,11 @@ button:hover {
   margin-left: auto;
 }
 
+
+
 /*--//wrapper--*/
+
+
 .login-hny {
   position: relative;
 }
@@ -422,6 +430,9 @@ button:hover {
   color:#52A494;
 }
 
+
+ /* =====Media Queries==== */  
+
 @media (max-width: 1080px) {
   .w3l-login-6 .form-left {
     width: 40%;
@@ -597,4 +608,12 @@ button:hover {
   .w3l-login-6 .signin-form label {
     font-size: 13px;
   }
+}
+
+
+@media (max-width: 1255px){
+.ourMemberList{
+  list-style: none;
+  width: 100%;
+}
 }

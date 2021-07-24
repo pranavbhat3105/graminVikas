@@ -1,3 +1,6 @@
+
+//Configuration of my  firebase database
+
 var firebaseConfig = {
     apiKey: "AIzaSyCN0l2YfyxhdAD1Ty3ImSdpgOv58kyIaQE",
     authDomain: "graminvikas-286d8.firebaseapp.com",

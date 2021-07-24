@@ -99,9 +99,10 @@ h2:after {
     height: 2px;
     background-color: #e67e22;
     content: " ";
-    width: 100px;
+    width: 210px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 40px ;
 }
 
 /* Search Bar */
@@ -200,9 +201,16 @@ h2:after {
   }
   
   .s01 form .inner-form .input-field.third-wrap .btn-search:hover {
-    background: #e67e22;
+    background:#ff7903;
   }
   
+  #search{
+      border-radius: 20px;
+  }
+  #location{
+      border-radius: 20px;
+  }
+
   @media screen and (max-width: 992px) {
     .s01 form legend {
       font-size: 50px;
@@ -623,7 +631,8 @@ header {
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: black;
+    padding-bottom: 20px;
 }
 
 .meal-photo img {
@@ -646,6 +655,45 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+ .inner-grid {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+ }
+ .inner-grid img {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+ }
+ @media screen and (max-width: 800px) {
+    .inner-grid {
+       flex: 50%;
+       max-width: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
 /* ----------------------------------------------- */
 /* HOW IT WORKS SECTION */
 /* ----------------------------------------------- */
@@ -770,7 +818,7 @@ cite img {
 /* SIGN UP */
 /* ----------------------------------------------- */
 
-.section-plans {
+/* .section-plans {
     background-color: #f4f4f4;
 }
 
@@ -822,7 +870,7 @@ cite img {
 .plan-box ul li {
     padding: 5px 0;
 }
-
+ */
 
 /* ----------------------------------------------- */
 /* FORM */
@@ -965,20 +1013,16 @@ footer p {
 }
 
 
-/* 
-.logo {
-    height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-    display: none ;
-}
 
-.logo-black { 
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin: 5px 0;
-} */
+
+
+
+@media screen and (max-width: 800px) {
+    .ourMemberList {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+
 

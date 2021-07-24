@@ -2,13 +2,13 @@
 		html {
         scroll-behavior: smooth;
         }
-		
+/* 		
 		body{
 		margin:0;
 		font-family: 'Source Sans Pro', sans-serif;
     
     
-		}
+		} */
 	
       .serviceLogo{
             align-items: center;
@@ -20,12 +20,15 @@
             width: 100%;
           }
 
-          label.logo{
+      .logo{
             color: white;
             font-size: 35px;
             line-height: 80px;
             padding: 0 100px;
             font-weight: bold;
+          }
+          .logo:hover{
+            color: white;
           }
 
           nav ul{
@@ -34,7 +37,7 @@
           }
           nav ul li{
             display: inline-block;
-            line-height: 70px;
+            line-height: 90px;
             margin: 0 20px;
             border-bottom: none; 
           }
@@ -47,12 +50,36 @@
             text-decoration: none;  
           }
           nav ul li a:hover{
-            color: orange;
+            background: orange;
             transition: .5s;
+            color: white;
           }
-          .active{
-            background-color: orange;
+          nav ul li a:active{
+            background: #f78f3a;
+            transition: .5s;
+            color: white;
           }
+          a:link, a:visited {
+            color: #fff;
+            text-decoration: none;
+            padding-bottom: 1px;
+        border-bottom: none;
+            -webkit-transition: border-bottom 0.2s, color 0.2s;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+          .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+          }
+          #check{
+            display: none;
+          }
+
 
           .container {
             max-width: 1320px;
@@ -140,6 +167,8 @@
         
 
           
+        
+  
           footer {
             background-color: #333;
             padding: 50px;
@@ -233,65 +262,154 @@
 
 
 
-
-        
-		@media (max-width:1285px){
-        label.logo{
-            font-size: 30px;
-            padding-left: 50px;
-          }
+ /* =============MEDIA QUERIES========= */
 
 
-         nav ul{
-            width: 100%;
-            height: 100vh;
-            background: #2c3e50;
-            z-index: 2;
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            scroll-behavior: smooth;         
-          }
-          nav ul li{
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-            
-          }
-          nav ul li a{
-            font-size: 20px;
-          }
-          a:hover,a.active{
-            background: none;
-            color: #e67e22;
-          }
-          /* #click:checked ~ ul{
-            left: 0;
-          } */
-          footer {
-            background-color: #333;
-            padding: 50px;
-            font-size: 80%;
-        }
-        
-        
+   
+ @media (max-width: 1252px){
+  .checkbtn{
+    display: block;
+  }
+   nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    z-index: 2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    scroll-behavior: smooth;
+    
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #e67e22;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
 
-@media (max-width:480px){
+  
+  footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .foot-row{
+  padding-top: 50px;
+  }
+  
+  #socialLinks{
+  margin-bottom: -30px;
+  }
+}
+
+
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  
+  footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .foot-row{
+  padding-top: 50px;
+  }
+  
+  #socialLinks{
+  margin-bottom: -30px;
+  }
+}
+
+
+
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    z-index: 2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    scroll-behavior: smooth;
+    
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #e67e22;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .social-links,.footer-nav{
+    position: relative;
+    padding-top: 5px;
+   }
+  
+   .foot-row{
+       padding-top: 50px;
+   }
    
 }
-    
 
 
-    @media (max-width:650px){
-    .social-links{
-     /* padding-top: 5px;
-     padding-right: 200px; */
-     position: relative;
-     padding-top: 5px;
-    }
-    .foot-row{
-        padding-top: 90px;
-    }
+
+@media (max-width:1252px){
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
 }
-        }
+
+}
+
+
+@media (max-width:650px){
+.social-links{
+position: relative;
+padding-top: 5px;
+}
+
+.foot-row{
+padding-top: 90px;
+}
+
+}

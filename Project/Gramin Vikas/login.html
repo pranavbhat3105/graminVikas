@@ -3,44 +3,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Compiled and minified CSS -->
+ 
+ <!-- CSS only -->
   <link rel="stylesheet" href="./resources/css/login.css">
-  <link rel="stylesheet" href="resources/css/ourServices.css" type="text/css">  
+  <link rel="stylesheet" href="./resources/css/survey.css">
+ <!-- Ion icon only -->
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Login Authentication
-  </title>
-</head>
-<body>
 
-  <div class="navigation">
-    <nav>
-        <!-- <input type="checkbox" id="check"> -->
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo" style="cursor: pointer;" id="logoClick">Gramin Vikas</label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutUs.html">About</a></li>
-          <li><a href="ourServices.html">Services</a></li>
-          <li><a href="contactUs.html">Contact</a></li>
-          <li><a href="#signup">Feedback</a></li>
-          <li><a href="register.html"class="active"  id="signIn">Register</a></li>
-        </ul>
-      </nav>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+  <title>Login Authentication</title>
+</head>
+  <body style=" background: rgb(0,33,36);
+      background: linear-gradient(198deg, rgba(0,33,36,1) 0%, rgba(35,234,249,1) 42%, rgba(239,0,255,1) 100%);">
+
+<div class="navigation">
+  <nav id="navbar_top">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a  href="#"class="logo" style="cursor: pointer;" id="logoClick">Gramin Vikas</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutUs.html">About</a></li>
+        <li><a href="ourServices.html">Services</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+        <li><a href="surveyform.html">Apply</a></li>
+        <li><a href="login.html"class="active"  id="signIn">Your Profile</a></li>
+      </ul>
+    </nav>
 </div>
 
 
   <section id="login-form">
     <div class="main-div" id="login-div">
-      <h3 style="padding-bottom: 25px;">Welcome to Gramin Vikas, Please Login Before You Proceed</h3>
+      <h3 style="padding-bottom: 25px;">Welcome to Gramin Vikas, Please Login/Register Before You Proceed</h3>
       <input type="email" placeholder="Email Here" required  id="email_field">
       <input type="password" placeholder="Password Here" id="password_field" >
   
-      <button id="login">Login Now</button>
+      <button id="login">Register Now</button>
 
-      <a href="/forgot_password.html">Forgot Password?</a>
+      <a href="./forgot_password.html">Forgot Password?</a>
+
     </div>
   
   
@@ -75,8 +80,8 @@
     </div>
     <div class="foot-row">
         <p>
-            This webpage was created for the course "Mini Project" by 6 People. No copyrights here.<br>
-            This webpage is for you! Thnakyou!
+          This webpage was created for internship purpose. No copyrights here.<br>
+                    This webpage is for you! Thnakyou!
         </p>
         <p>
             Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of Mumbai, India.
@@ -86,11 +91,16 @@
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-
-<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script> 
+
 <script type="module" src="./resources/js/auth.js"></script>
-<script   src="./resources/js/firebase.js"></script>
-<script   src="./resources/js/script.js"></script>
+<script src="./resources/js/firebase.js"></script>
+<script src="./resources/js/script.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
